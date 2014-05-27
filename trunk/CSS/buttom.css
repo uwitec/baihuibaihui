@@ -1,0 +1,93 @@
+﻿
+/*导航1*/
+.top{ width:100%; line-height:30px; height:30px; border-bottom:0px ;}
+.top_w100{ width:980px; margin:0 auto; padding:0; clear:both; overflow:hidden;}
+.top_w100left{  float:left;}
+.top_w100right{ float:right;}
+.top .img{ float:left; margin-top:-3px; margin-right:3px;}
+.top a{ color:#333;}
+.top_logo{ float:left; margin-right:20px; margin-top:8px;}
+.top_chengshi{ margin:10px; float:left; line-height:20px;}
+/*搜索*/
+.search{float:right; width:467px; margin-top:13px;}
+.search li{float:left;}
+.search .tag{color:#A9A9A9;}
+.search .tag li{float:left;width:78px;cursor:pointer; line-height:23px; text-align:center;padding-top:2px;}
+.search .tag .current{color:#fff; height:25px; background:#ffa600; }
+.search .txt{padding:0;float:left; width:99%;}
+.search .search_texe{ background:#fff; border:1px solid #D2D2D2;}
+.search .txt input{ width:368px; padding-left:12px; height:29px;line-height:29px;color:#BFBFBF;border:1px solid #cdcdcd; margin:0 auto; float:left; }
+.search .txt img{margin: 0px;}
+/*导航2*/
+#menu{ width:100%; margin:0 auto; clear:both;	background:url(../../images/tongyong.png);}
+#navMenu {
+    width:960px;
+	margin:0 auto;
+	padding-left:20px;
+	height:38px;
+	line-height:38px;
+	display:block;
+	overflow:hidden;
+	background-repeat:repeat-x;
+	background-position: left top;
+}
+
+.menu1 {Z-INDEX:5;}
+.menu1,.menu1 UL {padding:0px; margin:0px; list-style-type: none; overflow:hidden;}
+.menu1 LI,.menu1 a{LINE-HEIGHT:38px;FLOAT: left;}
+.menu1 LI {padding:0px; MARGIN: 0px; background:url(../../images/tongyong.png) -40px -198px no-repeat;margin-left: -4px; width:124px;}
+.menu1 a{
+	/*BORDER-RIGHT: #aaa 1px solid;*/ 
+	DISPLAY: block; 
+	FONT-WEIGHT: normal; 
+	FONT-SIZE:14px; 
+	MARGIN: 0px; 
+	TEXT-TRANSFORM: uppercase;
+	padding:0 20px 0 10px; 
+	color:#fff;
+	FONT-FAMILY: Arial, Helvetica, sans-serif;
+	font-weight:bold;
+}
+.menu1 a:hover{ color:#FFFFFF;}
+
+/*.menu1 LI ul li a:hover{ background-image:none;}*/
+.menu1 LI UL {MARGIN-LEFT: -999em; POSITION: absolute}
+.menu1 LI UL li,.menu1 LI UL li a{
+	line-height:24px;
+	background-image:none;}
+.menu1 LI:hover UL,.menu1 LI.sfhover UL {
+	MARGIN-TOP:38px;
+	Z-INDEX:6; 
+	MARGIN-LEFT:3px;
+	BORDER-BOTTOM: #0D1C31 1px solid; 
+	POSITION: absolute;
+	background:#fff;
+	+CLEAR: both; +MARGIN-TOP: 0px;
+	_clear:both; _margin-top:0px;
+	border-bottom:2px #228ac9 solid;
+	border-left:2px #228ac9 solid;
+	border-right:2px #228ac9 solid;
+}
+
+.pxkc{background:url(../../images/tongyong.png) 80px -198px no-repeat; float:left ; width:80px; }
+#pxckLi{ color:#0078b3;}
+.menu1 UL LI UL {DISPLAY: none;}
+.men_pl{ background:#fff; padding:5px 10px 5px 10px;}
+.men_quan{ float:left; border-bottom:1px solid #f6f6f6;}
+.men_pl a{ padding:0px; margin-right:20px; display:inline; float:left; color:#1e3d98; font-size:12px; background:none; height:30px; line-height:30px; font-weight:normal;}
+.men_pl a:hover{color:#b5200a;}
+
+/*底部*/
+.bottom{ width:100%; border-top:1px solid #dad7d7; overflow:hidden; margin-bottom:10px; padding-top:10px;}
+.bottom_left{ float:left; height:70px; }
+.bottom_pictel{ padding-left:70px;margin-top:16px;background:url(../../images/tongyong.png) 5px -134px no-repeat; padding-bottom:7px;}
+.bottom_teltex{ color:#666; line-height:23px; margin-top:5px;}
+.bottom_tel{ font-size:20px; color:#005378; font-family:"微软雅黑"}
+.bottom_xuke{ line-height:30px; font-size:14px; margin-left:12px;}
+.bottom_cont{ float:left; text-align:center; margin-left:30px; margin-right:20px; width:390px;}
+.bottom_right{ float:right; margin-top:10px;}
+.bottom_right img{ margin-left:10px;}
+.so_bottom{ margin-top:10px; width:320px; border:1px solid #84a0bb; height:25px; margin-left:32px; margin-bottom:20px;}
+.so_texe{ margin-left:9px; width:230px; height:24px; line-height:25px; float:left; background:#FFF; color:#999;}
+.so_bottom img{ float:right;}
+.so_an{background:url(../../images/tongyong.png) 0px -248px  no-repeat; cursor:pointer; width:68px; height:25px; margin-left:13px; float:right;}

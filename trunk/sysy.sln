@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "订餐网", ".", "{9A6ED636-35D9-4AFF-AC0D-2D563CC5854C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv2.0"
+		Debug.AspNetCompiler.VirtualPath = "/ynsysy.cn"
+		Debug.AspNetCompiler.PhysicalPath = "E:\项目\未分类\ynsysy.cn\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\ynsysy.cn\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/ynsysy.cn"
+		Release.AspNetCompiler.PhysicalPath = "E:\项目\未分类\ynsysy.cn\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\ynsysy.cn\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "12915"
+		VWDVirtualPath = "/"
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|.NET = Debug|.NET
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9A6ED636-35D9-4AFF-AC0D-2D563CC5854C}.Debug|.NET.ActiveCfg = Debug|.NET
+		{9A6ED636-35D9-4AFF-AC0D-2D563CC5854C}.Debug|.NET.Build.0 = Debug|.NET
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
