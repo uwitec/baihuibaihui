@@ -1,0 +1,145 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="author" content="天脉信息技术提供支持" />
+    <meta name="Copyright" content="天脉信息" />
+    <meta name="keywords" content="百会百惠，百惠卡，百会卡，新昌优惠，新昌折扣，新昌消费，新昌美食，新昌本地生活，新昌地方生活" />
+    <meta name="description" content="百会百惠致力于新昌、嵊州本地消费折扣信息服务，为商家提供免费的推广渠道，给消费者带来实实在在的优惠。我们的愿景：百店会员、百享优惠。" />
+    <link rel="icon" href="images/logo.ico" type="image/x-icon" />
+    <link rel="Bookmark" href="images/logo.ico" />
+    <title>百惠百惠网</title>
+    <link href="CSS/buttom.css" rel="stylesheet" type="text/css" />
+    <link href="CSS/kefu.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../JS/jquery.js"></script>
+    <script type="text/javascript" src="../JS/kefu.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            $("#searchBtn").click(function () {
+                var key = $("#key").val();
+                location.href = "../WebBusiness/Page_BusinessNavigateList.aspx?key=" + key;
+            });
+
+            $("#searchbtn1").click(function () {
+                var key = $("#Text1").val();
+                location.href = "../WebBusiness/Page_BusinessNavigateList.aspx?key=" + key;
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="floatTools" class="float0831">
+        <div class="floatL">
+            <a style="display: none" id="aFloatTools_Show" class="btnOpen" title="查看在线客服" onclick="javascript:$('#divFloatToolsView').animate({width: 'show', opacity: 'show'}, 'normal',function(){ $('#divFloatToolsView').show();kf_setCookie('RightFloatShown', 0, '', '/', 'www.318cf.com'); });$('#aFloatTools_Show').attr('style','display:none');$('#aFloatTools_Hide').attr('style','display:block');"
+                href="javascript:void(0);">展开</a> <a id="aFloatTools_Hide" class="btnCtn" title="关闭在线客服"
+                    onclick="javascript:$('#divFloatToolsView').animate({width: 'hide', opacity: 'hide'}, 'normal',function(){ $('#divFloatToolsView').hide();kf_setCookie('RightFloatShown', 1, '', '/', 'www.318cf.com'); });$('#aFloatTools_Show').attr('style','display:block');$('#aFloatTools_Hide').attr('style','display:none');"
+                    href="javascript:void(0);">收缩</a>
+        </div>
+        <div id="divFloatToolsView" class="floatR">
+            <div class="tp">
+            </div>
+            <div class="cn">
+                <ul>
+                    <li class="top">
+                        <h3 class="titZx">
+                            QQ咨询</h3>
+                    </li>
+                    <li><a class="icoTc" href="tencent://message/?Uin=514547270&Site=http://www.baihuibaihui.com&Menu=yes">
+                        客服小百</a> </li>
+                    <li><a class="icoTc" href="tencent://message/?Uin=514547270&Site=http://www.baihuibaihui.com&Menu=yes">
+                        客服小惠</a> </li>
+                </ul>
+                <ul class="webZx">
+                    <li class="webZx-in"><a href="tencent://message/?Uin=514547270&Site=http://www.baihuibaihui.com&Menu=yes"
+                        style="float: left">
+                        <img src="../images/right_float_web.png" border="0px"></a> </li>
+                </ul>
+                <ul>
+                    <li>
+                        <h3 class="titDh">
+                            电话咨询</h3>
+                    </li>
+                    <li><span class="icoTl">400-000-0000</span> </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <form id="form1" runat="server">
+    <div class="top_w100">
+        <div class="top_logo">
+            <%--   <a href="http://www.baihuibaihui.com">   </a>--%>
+            <img src="../images/logo.png" alt="百会百惠网" width="242" height="68" />
+        </div>
+        <div class="search">
+            <ul class="tag">
+                <li class="current" title="bussiness">搜索商户</li>
+            </ul>
+            <ul class="txt">
+                <li>
+                    <input id="key" class="search_texe" type="text" onfocus="this.value=''" style="margin: 0;
+                        padding: 0;" value="搜索关键字" /></li>
+                <li>
+                    <img src="../images/search.jpg" width="80" height="31" border="0" id="searchBtn"/></li>
+            </ul>
+        </div>
+    </div>
+    <div id="menu">
+        <div id="navMenu">
+            <ul class="menu1">
+                <li><a href="../Page_Main.aspx">首&nbsp;页</a></li>
+                <li id='pxckLi'><a href="../WebBusiness/Page_BusinessNavigateList.aspx" class='pxkc'>
+                    商户天地 </a></li>
+                <li id='Li1'><a href="../WebBusiness/Page_Business_Preferential_list.aspx" class='pxkc'>
+                    优惠活动</a> </li>
+                <li id='Li2'><a href="../WebMember/Page_MemberRegist.aspx" class='pxkc'>会员加入</a>
+                </li>
+                <li style="background: none;"><a href="../WebBusiness/Page_BusinessRegist.aspx">商户加盟</a></li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    <div class="bottom">
+        <div class="top_w100">
+            <div class="bottom_left">
+                <div class="bottom_pictel">
+                    <p class="bottom_teltex" style="margin: 0px; padding: 0px; text-decoration: none;
+                        list-style: none; color: #000;">
+                        全国统一服务咨询电话</p>
+                    <p class="bottom_tel" style="margin: 0px; padding: 0px; text-decoration: none; list-style: none;
+                        color: #000;">
+                        4006-186-900</p>
+                </div>
+                <div class="bottom_xuke">
+                    中华人民共和国支付业务许可证
+                </div>
+            </div>
+            <div class="bottom_cont">
+                <div class="so_bottom">
+                    <img src="../images/search.png" id="searchbtn1" alt="搜索商户" style="margin: 0" />
+                    <input id="Text1" class="search_texe" type="text" onfocus="this.value=''" style="margin: 0;
+                        padding: 0;" value="搜索关键字" />
+                </div>
+                <div class="bottom_teltex">
+                    <a href="../Default.aspx">网站首页</a>| <a href="../Page_ContactUs.aspx?text=联系我们">联系我们</a>|
+                    <a href="../Page_ContactUs.aspx?text=服务条款" target="_blank">服务条款</a><br />
+                    百惠百会网 版权所有 备案序号：浙ICP备10011855号<%--<script src="http://s15.cnzz.com/stat.php?id=5204110&web_id=5204110&show=pic"
+                        language="JavaScript"></script><script type="text/javascript" src="http://tajs.qq.com/stats?sId=27870959"
+                            charset="UTF-8"></script>--%>
+                </div>
+            </div>
+            <div class="bottom_right">
+                <img style="margin: 0" src="../images/bottom_weixing.png" width="158" height="92"
+                    alt="百会百会网微信二维码" />
+                <a href="http://www.baihuibaihui.com" target="_blank">
+                    <img style="margin: 0" src="../images/safe.png" width="150" height="92" border="0"
+                        alt="百会百会网许可证" /></a>
+            </div>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
